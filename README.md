@@ -1,6 +1,4 @@
-[ME](https://biigpongsatorn.github.io/)
-
-# About me
+[About me](https://biigpongsatorn.github.io/)
 
 ## Who Am I ? 🤔
 
