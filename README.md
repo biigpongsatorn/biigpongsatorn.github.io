@@ -6,7 +6,7 @@
 
 My name is `Pongsatorn Nitithammwoot` my nickname is `Big`. Now I'm living in Bangkok, Thailand. I'm who has passion in `Vue.js` and `Blockchain`. ❤️
 
-Currently I'm working `Full stack develoer` 👨🏻‍💻 , I want to make lots of Vue conponents, Javascript libraries, Node.js libraries or another opensources for improve my skill.
+Currently I'm working `Full stack develoer` 👨🏻‍💻 , I want to make lots of Vue conponents, Javascript libraries, Node.js libraries or another opensources for improve myself.
 
 ```
 “I am a slow walker, but I never walk backwards.”
