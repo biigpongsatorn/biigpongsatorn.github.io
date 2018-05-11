@@ -1,6 +1,8 @@
-[About me](https://biigpongsatorn.github.io/)
+# About me
 
-## Who Am I ? 🤔
+[ME](https://biigpongsatorn.github.io/)
+
+**Who Am I 🤔 ?**
 
 My name is `Pongsatorn Nitithammwoot` my nickname is `Big`. Now I'm living in Bangkok, Thailand. I'm who has passion in `Vue.js` and `Blockchain`. ❤️
 
