@@ -12,16 +12,16 @@
     <div>
       <p>
         My name is
-        <b>Pongsatorn Nitithammwoot</b> my nickname is
-        <b>Big</b>. Now I’m living in Bangkok, Thailand.
-        I’m who has passion in Vue.js and Blockchain ❤️
+        <b>Pongsatorn Nitithammwoot</b> or call me
+        <b>Big</b>. Now I’m living in <b>Bangkok, Thailand</b>.
+        I’m who has passion in <b>Vue.js</b> and <b>Blockchain</b> ❤️
       </p>
       <br>
       <p>
         Currently I’m working <b>Full stack develoer</b> 👨🏻‍💻 ,
-        I want to make lots of Vue conponents,
-        Javascript libraries, Node.js libraries
-        or another opensources for improve myself.
+        I want to make lots of <b>Vue conponents</b>,
+        <b>Javascript libraries</b>, <b>Node.js libraries</b>
+        or another <b>opensources</b> for <b>improve myself</b>.
       </p>
     </div>
     <br>

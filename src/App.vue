@@ -1,23 +1,20 @@
 <template>
   <div id="app">
     <div class="header">
-      <div class="header-item">
-        🎢 Slide Bar
+      <div class="header-item"
+      :class="{ 'header-item-active': $route.name === 'VueSlideBar' }"
+      @click="$router.push({ name: 'VueSlideBar' })">
+        <span>🎢 </span>Slide Bar
       </div>
-      <div class="header-item">
-        🖍 SVG Filler
+      <div class="header-item"
+      :class="{ 'header-item-active': $route.name === 'VueSvgFiller' }"
+      @click="$router.push({ name: 'VueSvgFiller' })">
+        <span>🖍 </span>SVG Filler
       </div>
-      <div class="header-item">
-        🇹🇭 Thailand Address
-      </div>
-      <div class="f-right pd-t-12px pd-r-15px" v-if="currentRoute !== 'AboutMe'">
-        <a class="github-button"
-        href="https://github.com/biigpongsatorn/vue-slide-bar"
-        data-size="large"
-        data-show-count="true"
-        aria-label="Star biigpongsatorn/vue-slide-bar on GitHub">
-          Star
-        </a>
+      <div class="header-item"
+      :class="{ 'header-item-active': $route.name === 'VueThailandAddressAutocomplete' }"
+      @click="$router.push({ name: 'VueThailandAddressAutocomplete' })">
+        <span>🇹🇭 </span>Thailand Address
       </div>
     </div>
     <div class="router-view">
@@ -36,7 +33,7 @@
       </div>
       <br>
       <div>
-        <a class="github-button" href="https://github.com/biigpongsatorn" data-size="large" aria-label="Follow @biigpongsatorn on GitHub">Follow @biigpongsatorn</a>
+        <iframe src="https://ghbtns.com/github-btn.html?user=biigpongsatorn&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
       </div>
     </div>
   </div>
@@ -57,18 +54,23 @@ export default {
 .header {
   float: left;
   width: 100%;
-  background-color: #42b883;
+  background-color: #000;
 }
 .header-item {
   float: left;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  color: rgba(255,255,255,0.75);
   padding: 15px;
 }
 .header-item:hover {
-  background-color: #45a077;
+  background-color: rgba(255,255,255,0.125);
+  color: #fff;
   cursor: pointer;
+}
+.header-item-active {
+  background-color: rgba(255,255,255,0.125);
+  color: #fff;
 }
 .router-view {
   float: left;
@@ -89,7 +91,7 @@ export default {
 }
 * {
   box-sizing: border-box;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #35495e;
@@ -102,6 +104,9 @@ export default {
   background-color: #f6f8fa;
   border-radius: 3px;
 }
+.bd-bt-whitesmoke {
+  border-bottom: 1px solid whitesmoke;
+}
 </style>
 
 <style lang="scss">
@@ -109,7 +114,7 @@ export default {
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
-$primary: #42b883;
+$primary: #0366d6;
 $primary-invert: findColorInvert($primary);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
