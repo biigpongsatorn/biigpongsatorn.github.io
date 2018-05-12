@@ -4,7 +4,7 @@
 
 **Who Am I 🤔 ?**
 
-My name is `Pongsatorn Nitithammwoot` my nickname is `Big`. Now I'm living in Bangkok, Thailand. I'm who has passion in `Vue.js` and `Blockchain`. ❤️
+My name is `Pongsatorn Nitithammwoot` or call me `Big`. Now I'm living in Bangkok, Thailand. I'm who has passion in `Vue.js` and `Blockchain`. ❤️
 
 Currently I'm working `Full stack develoer` 👨🏻‍💻 , I want to make lots of Vue conponents, Javascript libraries, Node.js libraries or another opensources for improve myself.
 
@@ -14,7 +14,7 @@ Currently I'm working `Full stack develoer` 👨🏻‍💻 , I want to make lot
 
 ## Contact me 📞
 
-- [github](https://github.com/biigpongsatorn)
-- [linkin](https://www.linkedin.com/in/pongsatorn-nitithammawoot-50b719152/)
-- [twitter](https://twitter.com/BiiG_Pongsatorn)
-- [facebook](https://www.facebook.com/biig.nttmw)
+- [Github](https://github.com/biigpongsatorn)
+- [Linkin](https://www.linkedin.com/in/pongsatorn-nitithammawoot-50b719152/)
+- [Twitter](https://twitter.com/BiiG_Pongsatorn)
+- [Facebook](https://www.facebook.com/biig.nttmw)
