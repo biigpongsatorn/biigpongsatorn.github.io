@@ -40,14 +40,15 @@
       <div class="my-title">
         การใช้งาน
       </div>
-      <div class="markdown">
+      <highlight language="javascript" class="highlight">
         import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
+
         Vue.component('ThailandAutoComplete', ThailandAutoComplete)
-      </div>
+      </highlight>
       <div>
         หรือ
       </div>
-      <div class="markdown">
+      <highlight language="javascript" class="highlight">
         import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
 
         export default {
@@ -55,14 +56,41 @@
             ThailandAutoComplete
           }
         }
+      </highlight>
+      <hr>
+    </div>
+    <div class="my-title pd-hrzt-30px">
+      ตัวอย่าง
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <div class="columns">
+        <div class="column">
+          <VueThailandAddressAutocompleteDemo/>
+        </div>
+        <div class="column">
+          <highlight language="javascript" class="highlight">
+            import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
+
+            Vue.component('ThailandAutoComplete', ThailandAutoComplete)
+          </highlight>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import VueThailandAddressAutocompleteDemo from '../components/vue-thailand-address-autocomplete'
 export default {
-  name: 'vue-thailand-address-autocomplete'
+  name: 'vue-thailand-address-autocomplete',
+  data () {
+    return {
+      codeDemo: JSON.stringify(VueThailandAddressAutocompleteDemo)
+    }
+  },
+  components: {
+    VueThailandAddressAutocompleteDemo
+  }
 }
 </script>
 

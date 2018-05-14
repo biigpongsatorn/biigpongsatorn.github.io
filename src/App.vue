@@ -112,8 +112,18 @@ export default {
   float: left;
   width: 100%;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: bold;
   margin: 10px 0;
+}
+.highlight {
+  padding: 0;
+  float: left;
+  width: 100%;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.highlight .hljs {
+  padding: 0 !important;
 }
 </style>
 

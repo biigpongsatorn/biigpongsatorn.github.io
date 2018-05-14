@@ -4,11 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Buefy from 'buefy'
+import Highlight from 'vue-highlight-component'
 
 import 'buefy/lib/buefy.css'
 import 'begeta/css/begeta.min.css'
+import 'highlight.js/styles/atelier-lakeside-dark.css'
 
 Vue.use(Buefy)
+Vue.component('Highlight', Highlight)
 
 Vue.config.productionTip = false
 
