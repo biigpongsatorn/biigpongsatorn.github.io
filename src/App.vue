@@ -103,9 +103,17 @@ export default {
   line-height: 1.45;
   background-color: #f6f8fa;
   border-radius: 3px;
+  margin: 10px 0;
 }
 .bd-bt-whitesmoke {
   border-bottom: 1px solid whitesmoke;
+}
+.my-title {
+  float: left;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 10px 0;
 }
 </style>
 

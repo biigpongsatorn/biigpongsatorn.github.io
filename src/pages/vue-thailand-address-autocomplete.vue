@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="pd-hrzt-30px">
-      📍 Autocomplete ที่อยู่ในประเทศไทยแบบสำเร็จรูป
+      📍 Autocomplete ที่อยู่ในประเทศไทยแบบสำเร็จรูป Base on <a target="_blank" href="https://github.com/Sellsuki/thai-address-database">thai-address-database</a>
       <div class="f-left w-100pct mg-t-15px">
         <b-tag> thailand-adress </b-tag>
         <b-tag> thailand </b-tag>
@@ -24,6 +24,37 @@
         <b-tag> autocomplete </b-tag>
         <b-tag> vue-component </b-tag>
         <b-tag> thai </b-tag>
+      </div>
+      <div class="my-title">
+        ติดตั้ง
+      </div>
+      <div class="markdown">
+        npm install vue-thailand-address-autocomplete --save
+      </div>
+      <div>
+        หรือ
+      </div>
+      <div class="markdown">
+        yarn add vue-thailand-address-autocomplete
+      </div>
+      <div class="my-title">
+        การใช้งาน
+      </div>
+      <div class="markdown">
+        import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
+        Vue.component('ThailandAutoComplete', ThailandAutoComplete)
+      </div>
+      <div>
+        หรือ
+      </div>
+      <div class="markdown">
+        import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
+
+        export default {
+          components: {
+            ThailandAutoComplete
+          }
+        }
       </div>
     </div>
   </div>
