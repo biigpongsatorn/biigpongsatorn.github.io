@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/biigpongsatorn/biigpongsatorn.github.io.svg?branch=dev)](https://travis-ci.org/biigpongsatorn/biigpongsatorn.github.io)
+
 #  😎 About me
 
 [ME](https://biigpongsatorn.github.io/)

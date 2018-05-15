@@ -10,7 +10,7 @@
       placeholder="ตำบล..."/>
     <ThailandAutoComplete v-model="amphoe" type="amphoe" @select="select" label="อำเภอ" placeholder="อำเภอ..."/>
     <ThailandAutoComplete v-model="province" type="province" @select="select" label="จังหวัด" size="medium" color="#35495e" placeholder="จังหวัด..."/>
-    <ThailandAutoComplete v-model="zipcode" type="zipcode" @select="select" size="large" color="#00a4e4" placeholder="รหัสไปรษณีย์..."/>
+    <ThailandAutoComplete v-model="zipcode" type="zipcode" @select="select" label="รหัสไปรษณีย์" size="large" color="#00a4e4" placeholder="รหัสไปรษณีย์..."/>
   </div>
 </template>
 
