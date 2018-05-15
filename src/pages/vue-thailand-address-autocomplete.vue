@@ -68,11 +68,6 @@
           <VueThailandAddressAutocompleteDemo/>
         </div>
         <div class="column">
-          <highlight language="javascript" class="highlight">
-            import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
-
-            Vue.component('ThailandAutoComplete', ThailandAutoComplete)
-          </highlight>
         </div>
       </div>
     </div>
