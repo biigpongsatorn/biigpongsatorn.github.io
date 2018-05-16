@@ -37,34 +37,37 @@
         Install
       </div>
       <highlight language="bash" class="highlight">
-        npm install vue-thailand-address-autocomplete --save
+      npm install vue-thailand-address-autocomplete --save
       </highlight>
       <div>
         Or
       </div>
       <highlight language="bash" class="highlight">
-        yarn add vue-thailand-address-autocomplete
+      yarn add vue-thailand-address-autocomplete
       </highlight>
       <hr>
       <div class="my-title">
         Usage
       </div>
       <highlight language="javascript" class="highlight">
-        import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
+      // main.js
+      import Vue from 'vue'
+      import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
 
-        Vue.component('ThailandAutoComplete', ThailandAutoComplete)
+      Vue.component('ThailandAutoComplete', ThailandAutoComplete)
       </highlight>
       <div>
         Or
       </div>
       <highlight language="javascript" class="highlight">
-        import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
+      // xxx.vue
+      import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
 
-        export default {
-          components: {
-            ThailandAutoComplete
-          }
+      export default {
+        components: {
+          ThailandAutoComplete
         }
+      }
       </highlight>
       <hr>
     </div>
