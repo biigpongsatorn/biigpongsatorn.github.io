@@ -125,6 +125,9 @@ export default {
 .highlight .hljs {
   padding: 0 !important;
 }
+.b-tabs section {
+  padding: 10px 0 !important;
+}
 </style>
 
 <style lang="scss">

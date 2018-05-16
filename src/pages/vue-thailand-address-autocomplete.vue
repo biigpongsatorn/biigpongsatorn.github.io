@@ -73,15 +73,10 @@
     <div class="f-left w-100pct pd-hrzt-30px">
       <b-tabs v-model="activeTab">
         <b-tab-item label="Props">
-          Lorem ipsum dolor sit amet.
+          <b-table :data="propsData" :columns="propsColumns" striped></b-table>
         </b-tab-item>
-
         <b-tab-item label="Events">
-          Lorem <br>
-          ipsum <br>
-          dolor <br>
-          sit <br>
-          amet.
+          <b-table :data="eventsData" :columns="eventsColumns" striped></b-table>
         </b-tab-item>
       </b-tabs>
       <hr>
@@ -122,7 +117,29 @@ export default {
   name: 'vue-thailand-address-autocomplete',
   data () {
     return {
-      codeDemo: JSON.stringify(VueThailandAddressAutocompleteDemo)
+      propsData: [
+        { props: 'v-model', type: 'String', default: '-', description: 'Binding value' },
+        { props: 'type', type: 'String', default: '-', description: 'ประเภทของ Field ประกอบด้วย district, amphoe, province, zipcode' },
+        { props: 'label', type: 'String', default: '-', description: 'คำอธิบายของ Field' },
+        { props: 'placeholder', type: 'String', default: '-', description: 'placeholder ของ Field' },
+        { props: 'color', type: 'String', default: '-', description: 'สี border ของ Field ตอน Focus และสี background ของ List' },
+        { props: 'size', type: 'String', default: 'default', description: 'ขนาดของ Field ประกอบด้วย small, default, medium, large' }
+      ],
+      propsColumns: [
+        { field: 'props', label: 'Props', centered: true },
+        { field: 'type', label: 'Type', centered: true },
+        { field: 'default', label: 'Default', centered: true },
+        { field: 'description', label: 'Description', centered: true }
+      ],
+      eventsData: [
+        { events: 'select', type: 'Function', default: '(address) => {}', description: 'Return address data (type object) when select address, คืนค่า Object ที่อยู่เมื่อเลือกที่อยู่จาก Autocomplete' }
+      ],
+      eventsColumns: [
+        { field: 'events', label: 'Events', centered: true },
+        { field: 'type', label: 'Type', centered: true },
+        { field: 'default', label: 'Default', centered: true },
+        { field: 'description', label: 'Description', centered: true }
+      ]
     }
   },
   components: {
