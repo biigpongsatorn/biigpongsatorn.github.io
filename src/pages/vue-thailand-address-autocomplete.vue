@@ -63,19 +63,27 @@
       ตัวอย่าง
     </div>
     <div class="f-left w-100pct pd-hrzt-30px">
-      <div class="columns">
-        <div class="column">
-          <VueThailandAddressAutocompleteDemo/>
-        </div>
-        <div class="column">
-        </div>
+      <VueThailandAddressAutocompleteDemo/>
+    </div>
+    <div class="my-title pd-hrzt-30px">
+      Options
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <b># Props / Events</b>
+    </div>
+    <div class="my-title pd-hrzt-30px">
+      Support the my project.
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <div class="markdown">
+        If you like this project, You can support me in a small way with starring ⭐ <a href="https://github.com/biigpongsatorn/vue-thailand-address-autocomplete">this project</a>.
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import VueThailandAddressAutocompleteDemo from '../components/vue-thailand-address-autocomplete'
+import VueThailandAddressAutocompleteDemo from '../components/demos/vue-thailand-address-autocomplete'
 export default {
   name: 'vue-thailand-address-autocomplete',
   data () {

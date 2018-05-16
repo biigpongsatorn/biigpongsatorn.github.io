@@ -6,7 +6,7 @@ import router from './router'
 import Buefy from 'buefy'
 import Highlight from 'vue-highlight-component'
 
-import 'highlight.js/styles/atelier-lakeside-dark.css'
+import 'highlight.js/styles/vs2015.css'
 import 'begeta/css/begeta.min.css'
 import 'buefy/lib/buefy.css'
 

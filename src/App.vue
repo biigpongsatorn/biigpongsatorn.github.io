@@ -120,7 +120,7 @@ export default {
   float: left;
   width: 100%;
   border-radius: 6px;
-  margin: 10px 0;
+  margin: 5px 0 !important;
 }
 .highlight .hljs {
   padding: 0 !important;
