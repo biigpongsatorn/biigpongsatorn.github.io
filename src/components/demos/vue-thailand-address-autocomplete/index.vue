@@ -1,7 +1,7 @@
 <template>
   <div class="f-left w-100pct">
-    <div class="markdown">
-      <div class="f-left w-50pct">
+    <div class="f-left w-100pct bg-cl-light pd-30px bd-rd-5px">
+      <div class="w-50pct-tablet">
         <ThailandAutoComplete v-model="district" type="district" @select="select" label="ตำบล" size="small" placeholder="ตำบล..."/>
         <ThailandAutoComplete v-model="amphoe" type="amphoe" @select="select" label="อำเภอ" color="#42b883" placeholder="อำเภอ..."/>
         <ThailandAutoComplete v-model="province" type="province" @select="select" label="จังหวัด" size="medium" color="#35495e" placeholder="จังหวัด..."/>

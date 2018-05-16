@@ -7,7 +7,7 @@
       <div class="markdown">
         1. Fork this repository.<br>
         2. Create new branch with feature name.<br>
-        3. Run `npm install` and `npm run dev`.<br>
+        3. Run <b>npm install</b> and <b>npm run dev</b>.<br>
         4. Create your feature.<br>
         5. Commit and set commit message with feature name.<br>
         6. Push your code to your fork repository.<br>

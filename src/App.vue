@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <!-- <div class="header-item"
+      <div class="header-item"
       :class="{ 'header-item-active': $route.name === 'VueSlideBar' }"
       @click="$router.push({ name: 'VueSlideBar' })">
         <span>🎢 </span>Slide Bar
@@ -10,7 +10,7 @@
       :class="{ 'header-item-active': $route.name === 'VueSvgFiller' }"
       @click="$router.push({ name: 'VueSvgFiller' })">
         <span>🖍 </span>SVG Filler
-      </div> -->
+      </div>
       <div class="header-item"
       :class="{ 'header-item-active': $route.name === 'VueThailandAddressAutocomplete' }"
       @click="$router.push({ name: 'VueThailandAddressAutocomplete' })">
