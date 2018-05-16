@@ -5,7 +5,7 @@
     </div>
     <div class="f-left w-100pct pd-hrzt-30px">
       <div class="markdown">
-        If you feel like this project, You can support me with starring ⭐ <a :href="link">this project</a>.
+        If you like this project, You can support me with starring ⭐ <a :href="link">this repository</a>.
       </div>
       <hr>
     </div>
