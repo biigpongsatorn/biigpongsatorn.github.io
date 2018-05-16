@@ -14,12 +14,12 @@
         My name is
         <b>Pongsatorn Nitithammwoot</b> or call me
         <b>Big</b>. Now I’m living in <b>Bangkok, Thailand</b>.
-        I’m who has passion in <b>Vue.js</b> and <b>Blockchain</b> ❤️
+        I’m who loved in <b>Vue.js</b> and <b>Blockchain</b> ❤️
       </p>
       <br>
       <p>
         Currently I’m working <b>Full stack develoer</b> 👨🏻‍💻 ,
-        I want to make lots of <b>Vue conponents</b>,
+        I want to make lots of <b>Vue components</b>,
         <b>Javascript libraries</b>, <b>Node.js libraries</b>
         or another <b>opensources</b> for <b>improve myself</b>.
       </p>
