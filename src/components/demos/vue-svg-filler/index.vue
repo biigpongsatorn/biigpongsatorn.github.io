@@ -51,13 +51,13 @@
     <div>
       <div class="my-sub-title"># Random Color</div>
       <div class="f-left pd-30px">
-        <svg-filler path="/static/vue-svg-filler/icon/frog.svg" :fill="svgForg.fill" width="50px" height="50px"/>
+        <svg-filler path="/static/vue-svg-filler/icon/frog.svg" :fill="svgFrog.fill" width="50px" height="50px"/>
       </div>
       <highlight language="html" class="highlight">
-      {{ templateCode.forg.html }}
+      {{ templateCode.frog.html }}
       </highlight>
       <highlight language="javascript" class="highlight">
-      {{ templateCode.forg.script }}
+      {{ templateCode.frog.script }}
       </highlight>
     </div>
   </div>
@@ -81,7 +81,7 @@ export default {
         height: '150px',
         hoverColor: '#35495e'
       },
-      svgForg: {
+      svgFrog: {
         fill: this.randomColor()
       },
       templateCode: {
@@ -97,19 +97,19 @@ export default {
         hover: {
           html: `<svg-filler path="/static/vue-svg-filler/vuejs.svg" fill="#42b883" width="150px" height="150px":hover-color="#35495e"/>`
         },
-        forg: {
-          html: `<svg-filler path="/static/vue-svg-filler/icon/frog.svg" :fill="svgForg.fill" width="50px" height="50px"/>`,
+        frog: {
+          html: `<svg-filler path="/static/vue-svg-filler/icon/frog.svg" :fill="svgFrog.fill" width="50px" height="50px"/>`,
           script: `export default {
       data () {
         return {
-          svgForg: {
+          svgFrog: {
             fill: this.randomColor()
           }
         }
       },
       mounted () {
         setInterval(() => {
-          this.svgForg.fill = this.randomColor()
+          this.svgFrog.fill = this.randomColor()
         }, 100)
       },
       methods: {
@@ -124,7 +124,7 @@ export default {
   },
   mounted () {
     setInterval(() => {
-      this.svgForg.fill = this.randomColor()
+      this.svgFrog.fill = this.randomColor()
     }, 100)
   },
   methods: {

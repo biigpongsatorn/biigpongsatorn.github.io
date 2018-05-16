@@ -100,20 +100,68 @@
       <VueSvgFillerDemo/>
       <hr>
     </div>
+    <div class="my-title pd-hrzt-30px">
+      Options
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <b-tabs v-model="activeTab">
+        <b-tab-item label="Props">
+          <b-table :data="propsData" :columns="propsColumns" striped></b-table>
+        </b-tab-item>
+        <b-tab-item label="Events">
+          <b-table :data="eventsData" :columns="eventsColumns" striped></b-table>
+        </b-tab-item>
+      </b-tabs>
+      <hr>
+    </div>
+    <Support link="https://github.com/biigpongsatorn/vue-svg-filler"/>
+    <Contributing/>
+    <License/>
   </div>
 </template>
 
 <script>
 import VueSvgFillerDemo from '../components/demos/vue-svg-filler'
+import Contributing from '../components/contributing'
+import License from '../components/license'
+import Support from '../components/support'
+
 export default {
   name: 'vue-svg-filler',
   data () {
     return {
-      examplePath: `<svg-filler path="static/PATH/OF/YOUR/FILE.svg"/>`
+      examplePath: `<svg-filler path="static/PATH/OF/YOUR/FILE.svg"/>`,
+      activeTab: 0,
+      propsData: [
+        { props: 'path', type: 'String', default: '-', description: 'Path of your svg file.' },
+        { props: 'width', type: 'String', default: '24px', description: 'Width.' },
+        { props: 'height', type: 'String', default: '24px', description: 'Height.' },
+        { props: 'fill', type: 'String', default: '#000', description: 'Fill color.' },
+        { props: 'hover-color', type: 'String', default: '-', description: 'Fill color when hover on icon.' }
+      ],
+      propsColumns: [
+        { field: 'props', label: 'Props', centered: true },
+        { field: 'type', label: 'Type', centered: true },
+        { field: 'default', label: 'Default', centered: true },
+        { field: 'description', label: 'Description', centered: true }
+      ],
+      eventsData: [
+        { events: 'click', type: 'Function', default: '-', description: 'Triggers when click.' },
+        { events: '[any].native', type: 'event: $event', default: '-', description: 'Listen to any native event, e.g. mouseover.native.' }
+      ],
+      eventsColumns: [
+        { field: 'events', label: 'Events', centered: true },
+        { field: 'type', label: 'Type', centered: true },
+        { field: 'default', label: 'Default', centered: true },
+        { field: 'description', label: 'Description', centered: true }
+      ]
     }
   },
   components: {
-    VueSvgFillerDemo
+    VueSvgFillerDemo,
+    Contributing,
+    License,
+    Support
   }
 }
 </script>
