@@ -18,6 +18,14 @@
     <div class="pd-hrzt-30px">
       📍 Autocomplete Thailand address Base on <a target="_blank" href="https://github.com/Sellsuki/thai-address-database">thai-address-database</a>
       <div class="f-left w-100pct mg-t-15px">
+        <p>
+          <a href="https://npmjs.com/package/vue-thailand-address-autocomplete"><img src="https://img.shields.io/npm/v/vue-thailand-address-autocomplete.svg" alt="NPM version"></a>
+          <a href="https://npmjs.com/package/vue-thailand-address-autocomplete"><img src="https://img.shields.io/npm/dm/vue-thailand-address-autocomplete.svg" alt="NPM downloads"></a>
+          <a href="https://www.npmjs.com/package/vue-thailand-address-autocomplete"><img src="https://img.shields.io/npm/l/vue-thailand-address-autocomplete.svg" alt="License"></a>
+          <a href="https://www.npmjs.com/package/vue-thailand-address-autocomplete"><img src="https://travis-ci.org/biigpongsatorn/biigpongsatorn.github.io.svg?branch=dev" alt="Demo Build Status"></a>
+        </p>
+      </div>
+      <div class="f-left w-100pct mg-t-15px">
         <b-tag> thailand-adress </b-tag>
         <b-tag> thailand </b-tag>
         <b-tag> address </b-tag>
@@ -28,15 +36,15 @@
       <div class="my-title">
         Install
       </div>
-      <div class="markdown">
+      <highlight language="bash" class="highlight">
         npm install vue-thailand-address-autocomplete --save
-      </div>
+      </highlight>
       <div>
         Or
       </div>
-      <div class="markdown">
+      <highlight language="bash" class="highlight">
         yarn add vue-thailand-address-autocomplete
-      </div>
+      </highlight>
       <hr>
       <div class="my-title">
         Usage
@@ -81,42 +89,23 @@
       </b-tabs>
       <hr>
     </div>
-    <div class="my-title pd-hrzt-30px">
-      Support
-    </div>
-    <div class="f-left w-100pct pd-hrzt-30px">
-      <div class="markdown">
-        If you like this project, You can support me in a small way with starring ⭐ <a href="https://github.com/biigpongsatorn/vue-thailand-address-autocomplete">this project</a>.
-      </div>
-      <hr>
-    </div>
-    <div class="my-title pd-hrzt-30px">
-      Contributing
-    </div>
-    <div class="f-left w-100pct pd-hrzt-30px">
-      <div class="markdown">
-        1. Fork this repo.<br>
-        2. git checkout -b feature-name<br>
-        3. npm install<br>
-        4. npm run dev<br>
-        5. git commit -m "Feature name"<br>
-        6. git push origin feature-name<br>
-        7. Create pull request.
-      </div>
-      <hr>
-    </div>
-    <div class="my-title pd-hrzt-30px">
-      License <a href="https://opensource.org/licenses/MIT">MIT</a>
-    </div>
+    <Support link="https://github.com/biigpongsatorn/vue-thailand-address-autocomplete"/>
+    <Contributing/>
+    <License/>
   </div>
 </template>
 
 <script>
 import VueThailandAddressAutocompleteDemo from '../components/demos/vue-thailand-address-autocomplete'
+import Contributing from '../components/contributing'
+import License from '../components/license'
+import Support from '../components/support'
+
 export default {
   name: 'vue-thailand-address-autocomplete',
   data () {
     return {
+      activeTab: 0,
       propsData: [
         { props: 'v-model', type: 'String', default: '-', description: 'Binding value' },
         { props: 'type', type: 'String', default: '-', description: 'ประเภทของ Field ประกอบด้วย district, amphoe, province, zipcode' },
@@ -143,7 +132,10 @@ export default {
     }
   },
   components: {
-    VueThailandAddressAutocompleteDemo
+    VueThailandAddressAutocompleteDemo,
+    Contributing,
+    License,
+    Support
   }
 }
 </script>
