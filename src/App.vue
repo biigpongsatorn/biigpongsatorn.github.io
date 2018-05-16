@@ -138,6 +138,13 @@ $link-focus-border: $primary;
   font-weight: bold;
   margin: 10px 0;
 }
+.my-sub-title {
+  float: left;
+  width: 100%;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 10px 0;
+}
 .highlight {
   padding: 0;
   float: left;

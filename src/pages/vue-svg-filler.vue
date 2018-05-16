@@ -29,13 +29,92 @@
         <b-tag> customization </b-tag>
         <b-tag> svg-files </b-tag>
       </div>
+      <div class="f-left w-100pct mg-t-15px">
+        <p>
+          <a href="https://npmjs.com/package/vue-svg-filler"><img src="https://img.shields.io/npm/v/vue-svg-filler.svg?style=flat" alt="NPM version"></a>
+          <a href="https://npmjs.com/package/vue-svg-filler"><img src="https://img.shields.io/npm/dm/vue-svg-filler.svg?style=flat" alt="NPM downloads"></a>
+          <a href="https://www.npmjs.com/package/vue-svg-filler"><img src="https://img.shields.io/npm/l/vue-svg-filler.svg?style=flat" alt="License"></a>
+          <a href="https://www.npmjs.com/package/vue-svg-filler"><img src="https://travis-ci.org/biigpongsatorn/biigpongsatorn.github.io.svg?branch=dev" alt="Build Status"></a>
+        </p>
+      </div>
+      <div class="my-title">
+        Install
+      </div>
+      <highlight language="bash" class="highlight">
+      npm install vue-svg-filler --save
+      </highlight>
+      <div>
+        Or
+      </div>
+      <highlight language="bash" class="highlight">
+      yarn add vue-svg-filler
+      </highlight>
+      <hr>
+      <div class="my-title">
+        Usage
+      </div>
+      <highlight language="javascript" class="highlight">
+      // main.js
+      import Vue from 'vue'
+      import SvgFiller from 'vue-svg-filler'
+
+      Vue.component('SvgFiller', SvgFiller)
+      </highlight>
+      <div>
+        Or
+      </div>
+      <highlight language="javascript" class="highlight">
+      // xxx.vue
+      import SvgFiller from 'vue-svg-filler'
+
+      export default {
+        components: {
+          SvgFiller
+        }
+      }
+      </highlight>
+      <hr>
+      <div class="my-sub-title">
+        🚨 Please note that !
+      </div>
+      <div class="markdown">
+        1. Your <b>svg</b> file must only contain in <b>/static</b> directory <br>
+        2. <b>path</b> must be full path e.g. <b>static/icon.svg</b> or <b>/static/icon/file.svg</b> , Can't use <b>../</b> or <b>./</b> <br><br>
+      <highlight language="html" class="highlight">
+      {{ examplePath }}
+      </highlight>
+      </div>
+      <hr>
+      <div class="my-sub-title">
+        Example directory structure
+      </div>
+      <div class="markdown">
+        <img src="/static/vue-svg-filler/directory-struct.png">
+      </div>
+      <hr>
+    </div>
+    <div class="my-title pd-hrzt-30px">
+      Example
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <VueSvgFillerDemo/>
+      <hr>
     </div>
   </div>
 </template>
 
 <script>
+import VueSvgFillerDemo from '../components/demos/vue-svg-filler'
 export default {
-  name: 'vue-svg-filler'
+  name: 'vue-svg-filler',
+  data () {
+    return {
+      examplePath: `<svg-filler path="static/PATH/OF/YOUR/FILE.svg"/>`
+    }
+  },
+  components: {
+    VueSvgFillerDemo
+  }
 }
 </script>
 
