@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="pd-hrzt-30px">
-      📍 Autocomplete ที่อยู่ในประเทศไทยแบบสำเร็จรูป Base on <a target="_blank" href="https://github.com/Sellsuki/thai-address-database">thai-address-database</a>
+      📍 Autocomplete Thailand address Base on <a target="_blank" href="https://github.com/Sellsuki/thai-address-database">thai-address-database</a>
       <div class="f-left w-100pct mg-t-15px">
         <b-tag> thailand-adress </b-tag>
         <b-tag> thailand </b-tag>
@@ -26,19 +26,20 @@
         <b-tag> thai </b-tag>
       </div>
       <div class="my-title">
-        ติดตั้ง
+        Install
       </div>
       <div class="markdown">
         npm install vue-thailand-address-autocomplete --save
       </div>
       <div>
-        หรือ
+        Or
       </div>
       <div class="markdown">
         yarn add vue-thailand-address-autocomplete
       </div>
+      <hr>
       <div class="my-title">
-        การใช้งาน
+        Usage
       </div>
       <highlight language="javascript" class="highlight">
         import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
@@ -46,7 +47,7 @@
         Vue.component('ThailandAutoComplete', ThailandAutoComplete)
       </highlight>
       <div>
-        หรือ
+        Or
       </div>
       <highlight language="javascript" class="highlight">
         import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
@@ -60,24 +61,57 @@
       <hr>
     </div>
     <div class="my-title pd-hrzt-30px">
-      ตัวอย่าง
+      Example
     </div>
     <div class="f-left w-100pct pd-hrzt-30px">
       <VueThailandAddressAutocompleteDemo/>
+      <hr>
     </div>
     <div class="my-title pd-hrzt-30px">
       Options
     </div>
     <div class="f-left w-100pct pd-hrzt-30px">
-      <b># Props / Events</b>
+      <b-tabs v-model="activeTab">
+        <b-tab-item label="Props">
+          Lorem ipsum dolor sit amet.
+        </b-tab-item>
+
+        <b-tab-item label="Events">
+          Lorem <br>
+          ipsum <br>
+          dolor <br>
+          sit <br>
+          amet.
+        </b-tab-item>
+      </b-tabs>
+      <hr>
     </div>
     <div class="my-title pd-hrzt-30px">
-      Support the my project.
+      Support
     </div>
     <div class="f-left w-100pct pd-hrzt-30px">
       <div class="markdown">
         If you like this project, You can support me in a small way with starring ⭐ <a href="https://github.com/biigpongsatorn/vue-thailand-address-autocomplete">this project</a>.
       </div>
+      <hr>
+    </div>
+    <div class="my-title pd-hrzt-30px">
+      Contributing
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <div class="markdown">
+        1. Fork this repo.<br>
+        2. git checkout -b feature-name<br>
+        3. npm install<br>
+        4. npm run dev<br>
+        5. git commit -m "Feature name"<br>
+        6. git push origin feature-name<br>
+        7. Create pull request.
+      </div>
+      <hr>
+    </div>
+    <div class="my-title pd-hrzt-30px">
+      License <a href="https://opensource.org/licenses/MIT">MIT</a>
     </div>
   </div>
 </template>
