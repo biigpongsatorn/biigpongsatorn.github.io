@@ -8,7 +8,6 @@ import Highlight from 'vue-highlight-component'
 
 import 'highlight.js/styles/vs2015.css'
 import 'begeta/css/begeta.min.css'
-import 'buefy/lib/buefy.css'
 
 Vue.use(Buefy)
 Vue.component('Highlight', Highlight)

@@ -50,6 +50,29 @@ export default {
 }
 </script>
 
+<style lang="scss">
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #0366d6;
+$primary-invert: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "primary": ($primary, $primary-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+</style>
+
 <style scoped>
 .header {
   float: left;
@@ -128,27 +151,4 @@ export default {
 .b-tabs section {
   padding: 10px 0 !important;
 }
-</style>
-
-<style lang="scss">
-// Import Bulma's core
-@import "~bulma/sass/utilities/_all";
-
-// Set your colors
-$primary: #0366d6;
-$primary-invert: findColorInvert($primary);
-
-// Setup $colors to use as bulma classes (e.g. 'is-twitter')
-$colors: (
-  "primary": ($primary, $primary-invert)
-);
-
-// Links
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
-
-// Import Bulma and Buefy styles
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
 </style>
