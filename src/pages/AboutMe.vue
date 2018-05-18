@@ -18,7 +18,7 @@
       </p>
       <br>
       <p>
-        Currently I’m working <b>Full stack develoer</b> 👨🏻‍💻 ,
+        Currently I’m working <b>Full stack developer</b> 👨🏻‍💻 ,
         I want to make lots of <b>Vue components</b>,
         <b>Javascript libraries</b>, <b>Node.js libraries</b>
         or another <b>opensources</b> for <b>improve myself</b>.

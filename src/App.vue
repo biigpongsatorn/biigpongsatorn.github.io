@@ -1,21 +1,24 @@
 <template>
   <div id="app">
     <div class="header">
-      <div class="header-item"
-      :class="{ 'header-item-active': $route.name === 'VueSlideBar' }"
-      @click="$router.push({ name: 'VueSlideBar' })">
-        <span>🎢 </span>Slide Bar
-      </div>
-      <div class="header-item"
-      :class="{ 'header-item-active': $route.name === 'VueSvgFiller' }"
-      @click="$router.push({ name: 'VueSvgFiller' })">
-        <span>🖍 </span>SVG Filler
-      </div>
-      <div class="header-item"
-      :class="{ 'header-item-active': $route.name === 'VueThailandAddressAutocomplete' }"
-      @click="$router.push({ name: 'VueThailandAddressAutocomplete' })">
-        <span>🇹🇭 </span>Thailand Address
-      </div>
+      <b-dropdown class="mg-hrzt-10px" hoverable>
+        <div class="header-item header-item-active" slot="trigger">
+          <svg-filler path="/static/app/bars.svg" fill="#fff" class="mg-r-10px"/>
+          {{ findCurrentRouteTitle }}
+        </div>
+        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueSlideBar' })">
+          <span>🎢 </span>Slide Bar
+        </b-dropdown-item>
+        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueSvgFiller' })">
+          <span>🖍 </span>SVG Filler
+        </b-dropdown-item>
+        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueThailandAddressAutocomplete' })">
+          <span>🇹🇭 </span>Thailand Address
+        </b-dropdown-item>
+        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'AboutMe' })">
+          <span>😎 </span>About Me
+        </b-dropdown-item>
+      </b-dropdown>
     </div>
     <div class="router-view">
       <router-view/>
@@ -40,12 +43,28 @@
 </template>
 
 <script>
+import SvgFiller from 'vue-svg-filler'
+
 export default {
   name: 'App',
   computed: {
     currentRoute () {
       return this.$route.name
+    },
+    findCurrentRouteTitle () {
+      if (this.currentRoute === 'VueSlideBar') {
+        return 'Slide Bar'
+      } else if (this.currentRoute === 'VueSvgFiller') {
+        return 'SVG Filler'
+      } else if (this.currentRoute === 'VueThailandAddressAutocomplete') {
+        return 'Thailand Address'
+      } else if (this.currentRoute === 'AboutMe') {
+        return 'About Me'
+      }
     }
+  },
+  components: {
+    SvgFiller
   }
 }
 </script>

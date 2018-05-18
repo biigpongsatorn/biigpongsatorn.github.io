@@ -32,6 +32,9 @@
       <highlight language="html" class="highlight">
       {{ templateCode.click.html }}
       </highlight>
+      <highlight language="javascript" class="highlight">
+      {{ templateCode.click.script }}
+      </highlight>
     </div>
     <div>
       <div class="my-sub-title"># Hover</div>
@@ -71,7 +74,7 @@ export default {
   data () {
     return {
       svgPalette: {
-        fill: '#c2f91d',
+        fill: this.randomColor(),
         width: '150px',
         height: '150px'
       },
@@ -92,7 +95,23 @@ export default {
           html: `<svg-filler path="/static/vue-svg-filler/icon/bitcoin.svg" fill="#FF9900" width="50px" height="50px"/>`
         },
         click: {
-          html: `<svg-filler path="/static/vue-svg-filler/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()"/>`
+          html: `<svg-filler path="/static/vue-svg-filler/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()"/>`,
+          script: `export default {
+      data () {
+        return {
+          svgPalette: {
+            fill: this.randomColor(),
+            width: '150px',
+            height: '150px'
+          }
+        }
+      },
+      methods: {
+        randomColor () {
+          return '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+        }
+      }
+    }`
         },
         hover: {
           html: `<svg-filler path="/static/vue-svg-filler/vuejs.svg" fill="#42b883" width="150px" height="150px":hover-color="#35495e"/>`
