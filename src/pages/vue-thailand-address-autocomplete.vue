@@ -19,7 +19,7 @@
       📍 Autocomplete Thailand address <br>
       Base on <a target="_blank" href="https://github.com/earthchie/jquery.Thailand.js">jquery.Thailand.js</a> และ <a target="_blank" href="https://github.com/Sellsuki/thai-address-database">thai-address-database</a>
       <br>
-      Fantastic database by <a target="_blank" href="https://github.com/earthchie">@earthchie</a>
+      Very well database by <a target="_blank" href="https://github.com/earthchie">@earthchie</a>
       <div class="f-left w-100pct mg-t-15px">
         <b-tag> thailand-adress </b-tag>
         <b-tag> thailand </b-tag>
