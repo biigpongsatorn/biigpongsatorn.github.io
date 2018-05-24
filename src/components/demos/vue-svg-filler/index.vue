@@ -89,13 +89,13 @@ export default {
       },
       templateCode: {
         simple: {
-          html: `<svg-filler path="/static/vue-svg-filler/github.svg"/>`
+          html: `<svg-filler path="/static/github.svg"/>`
         },
         customize: {
-          html: `<svg-filler path="/static/vue-svg-filler/icon/bitcoin.svg" fill="#FF9900" width="50px" height="50px"/>`
+          html: `<svg-filler path="/static/icon/bitcoin.svg" fill="#FF9900" width="50px" height="50px"/>`
         },
         click: {
-          html: `<svg-filler path="/static/vue-svg-filler/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()"/>`,
+          html: `<svg-filler path="/static/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()"/>`,
           script: `export default {
       data () {
         return {
@@ -114,10 +114,10 @@ export default {
     }`
         },
         hover: {
-          html: `<svg-filler path="/static/vue-svg-filler/vuejs.svg" fill="#42b883" width="150px" height="150px":hover-color="#35495e"/>`
+          html: `<svg-filler path="/static/vuejs.svg" fill="#42b883" width="150px" height="150px":hover-color="#35495e"/>`
         },
         frog: {
-          html: `<svg-filler path="/static/vue-svg-filler/icon/frog.svg" :fill="svgFrog.fill" width="50px" height="50px"/>`,
+          html: `<svg-filler path="/static/icon/frog.svg" :fill="svgFrog.fill" width="50px" height="50px"/>`,
           script: `export default {
       data () {
         return {
