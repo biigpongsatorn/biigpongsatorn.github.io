@@ -67,7 +67,8 @@ export default {
           </div>
           <div class="f-left">
             <div class="f-w-bold">{{coin.name}}</div>
-            <div>{{coin.price}}
+            <div>
+              {{coin.price}}
               <span :class="{ 'cl-success': coin.change > 0, 'cl-danger': coin.change < 0 }">({{coin.change}}%)</span>
             </div>
           </div>

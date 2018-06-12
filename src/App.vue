@@ -3,8 +3,8 @@
     <div class="header">
       <b-dropdown class="mg-hrzt-10px" hoverable>
         <div class="header-item header-item-active" slot="trigger">
-          <svg-filler path="/static/app/bars.svg" fill="#fff" class="mg-r-10px"/>
           {{ findCurrentRouteTitle }}
+          <svg-filler path="/static/app/arrow-down.svg" fill="#fff" class="mg-r-10px"/>
         </div>
         <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueSlideBar' })">
           <span>🎢 </span>Slide Bar
@@ -101,7 +101,7 @@ $link-focus-border: $primary;
 .header {
   float: left;
   width: 100%;
-  background-color: #000;
+  background-color: #c0392b;
 }
 .header-item {
   float: left;
@@ -169,6 +169,8 @@ $link-focus-border: $primary;
   font-weight: bold;
   margin: 10px 0;
 }
+
+/* Customize style highlightjs */
 .highlight {
   padding: 0;
   float: left;
@@ -178,6 +180,7 @@ $link-focus-border: $primary;
 }
 .highlight .hljs {
   padding: 0 !important;
+  background-color: #f6f8fa !important;
 }
 .b-tabs section {
   padding: 10px 0 !important;
