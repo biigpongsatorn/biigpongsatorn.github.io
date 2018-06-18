@@ -57,7 +57,7 @@
       import Vue from 'vue'
       import ThailandAutoComplete from 'vue-thailand-address-autocomplete'
 
-      Vue.component('ThailandAutoComplete', ThailandAutoComplete)
+      Vue.component('thailand-autocomplete', ThailandAutoComplete)
       </highlight>
       <div>
         Or
