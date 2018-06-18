@@ -59,7 +59,7 @@
       import Vue from 'vue'
       import VueSlideBar from 'vue-slide-bar'
 
-      Vue.component('VueSlideBar', VueSlideBar)
+      Vue.component('vue-slide-bar', VueSlideBar)
       </highlight>
       <div>
         Or
