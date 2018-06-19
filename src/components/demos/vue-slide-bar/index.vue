@@ -2,7 +2,7 @@
   <div class="f-left w-100pct">
     <div class="my-sub-title"># Simple usage</div>
     <div class="f-left w-100pct pd-30px">
-      <VueSlideBar v-model="simpleValue"/>
+      <vue-slide-bar v-model="simpleValue"/>
       <div class="columns mg-t-15px">
         <div class="column">
           <b>template</b>
@@ -20,7 +20,7 @@
     </div>
     <div class="my-sub-title"># Range & Label</div>
     <div class="f-left w-100pct pd-30px">
-      <VueSlideBar
+      <vue-slide-bar
         v-model="sliderWithLabel.value"
         :data="sliderWithLabel.data"
         :range="sliderWithLabel.range"
@@ -28,7 +28,7 @@
         <template slot="tooltip" slot-scope="tooltip">
           <img src="static/vue-slide-bar/rectangle-slider.svg">
         </template>
-      </VueSlideBar>
+      </vue-slide-bar>
       <b>Value: {{sliderWithLabel.value}}</b>, <b>Label: {{sliderWithLabel.rangeValue.label}}</b>
       <div class="columns mg-t-15px">
         <div class="column">
@@ -47,14 +47,14 @@
     </div>
     <div class="my-sub-title"># Custom Style & Min-Max</div>
     <div class="f-left w-100pct pd-30px">
-      <VueSlideBar
+      <vue-slide-bar
         v-model="sliderCustomzie.val"
         :min="1"
         :max="10"
         :processStyle="sliderCustomzie.processStyle"
         :lineHeight="sliderCustomzie.lineHeight"
         :tooltipStyles="sliderCustomzie.tooltipStyles">
-      </VueSlideBar>
+      </vue-slide-bar>
       <h2>Value: {{sliderCustomzie.val}}</h2>
       <div class="columns mg-t-15px">
         <div class="column">
@@ -73,7 +73,7 @@
     </div>
     <div class="my-sub-title"># Loading</div>
     <div class="f-left w-100pct pd-30px">
-      <VueSlideBar v-model="loadingValue" :showTooltip="false" :lineHeight="20" :isDisabled="true" :processStyle="{ backgroundColor: '#35495e' }"/>
+      <vue-slide-bar v-model="loadingValue" :showTooltip="false" :lineHeight="20" :isDisabled="true" :processStyle="{ backgroundColor: '#35495e' }"/>
       <b>{{loadingValue}}%</b>
       <br><br>
       <div class="button" @click="startLoad">Start !</div>
@@ -152,7 +152,7 @@ export default {
       loadingValue: 0,
       templateCode: {
         simple: {
-          html: `<VueSlideBar v-model="simpleValue"/>`,
+          html: `<vue-slide-bar v-model="simpleValue"/>`,
           script: `export default {
             data () {
               return {
@@ -162,14 +162,14 @@ export default {
           }`
         },
         label: {
-          html: `<VueSlideBar v-model="sliderWithLabel.value"
+          html: `<vue-slide-bar v-model="sliderWithLabel.value"
                   :data="sliderWithLabel.data"
                   :range="sliderWithLabel.range"
                   @callbackRange="callbackRange">
           <template slot="tooltip" slot-scope="tooltip">
             <img src="static/vue-slide-bar/rectangle-slider.svg">
           </template>
-        </VueSlideBar>`,
+        </vue-slide-bar>`,
           script: `export default {
             data () {
               return {
@@ -221,14 +221,14 @@ export default {
           }`
         },
         custom: {
-          html: `<VueSlideBar
+          html: `<vue-slide-bar
                   v-model="sliderCustomzie.val"
                   :min="1"
                   :max="10"
                   :processStyle="sliderCustomzie.processStyle"
                   :lineHeight="sliderCustomzie.lineHeight"
                   :tooltipStyles="sliderCustomzie.tooltipStyles">
-        </VueSlideBar>`,
+        </vue-slide-bar>`,
           script: `export default {
             data () {
               return {
@@ -248,7 +248,7 @@ export default {
           }`
         },
         loading: {
-          html: `<VueSlideBar v-model="loadingValue"
+          html: `<vue-slide-bar v-model="loadingValue"
                   :showTooltip="false"
                   :lineHeight="20"
                   :isDisabled="true"
