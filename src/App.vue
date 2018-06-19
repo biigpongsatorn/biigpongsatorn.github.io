@@ -18,9 +18,9 @@
         <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueInfiniteSlideBar' })">
           <span>∞ </span>Infinite Slide Bar
         </b-dropdown-item>
-        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'AboutMe' })">
+        <!-- <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'AboutMe' })">
           <span>😎 </span>About Me
-        </b-dropdown-item>
+        </b-dropdown-item> -->
       </b-dropdown>
     </div>
     <div class="router-view">
