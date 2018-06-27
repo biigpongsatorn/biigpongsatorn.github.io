@@ -23,6 +23,8 @@
       <div class="f-left pd-vtc-30px">
         <svg-filler path="/static/vue-svg-filler/icon/palette.svg"
         class="cs-pointer"
+        stroke="red"
+        hover-stroke-color="green"
         :fill="svgPalette.fill"
         :width="svgPalette.width"
         :height="svgPalette.height"
@@ -95,7 +97,7 @@ export default {
           html: `<svg-filler path="/static/icon/bitcoin.svg" fill="#FF9900" width="50px" height="50px"/>`
         },
         click: {
-          html: `<svg-filler path="/static/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()"/>`,
+          html: `<svg-filler path="/static/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()" stroke="red" hover-stroke-color="green"/>`,
           script: `export default {
       data () {
         return {
