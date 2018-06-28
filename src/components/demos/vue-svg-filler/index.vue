@@ -117,7 +117,11 @@ export default {
       },
       methods: {
         randomColor () {
-          return '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+          let length = 6
+          let chars = '0123456789ABCDEF'
+          let hex = '#'
+          while (length--) hex += chars[(Math.random() * 16) | 0]
+          return hex
         }
       }
     }`
@@ -142,7 +146,11 @@ export default {
       },
       methods: {
         randomColor () {
-          return '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+          let length = 6
+          let chars = '0123456789ABCDEF'
+          let hex = '#'
+          while (length--) hex += chars[(Math.random() * 16) | 0]
+          return hex
         }
       }
     }`
