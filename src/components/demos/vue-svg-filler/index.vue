@@ -19,17 +19,22 @@
       </highlight>
     </div>
     <div>
-      <div class="my-sub-title"># Click <span>(click icon for change color)</span></div>
+      <div class="my-sub-title"># Fill & Stroke <span>(click icon for change color)</span></div>
       <div class="f-left pd-vtc-30px">
         <svg-filler path="/static/vue-svg-filler/icon/palette.svg"
         class="cs-pointer"
-        stroke="red"
-        hover-stroke-color="green"
-        :fill="svgPalette.fill"
+        :fill="svgPalette.color"
         :width="svgPalette.width"
         :height="svgPalette.height"
-        @click="svgPalette.fill = randomColor()"/>
-        <span class="my-sub-title" :style="{ 'color': svgPalette.fill }">{{ svgPalette.fill }}</span>
+        @click="svgPalette.color = randomColor()"/>
+        <svg-filler path="/static/vue-svg-filler/icon/palette.svg"
+        class="cs-pointer"
+        :stroke="svgPalette.color"
+        fill="none"
+        :width="svgPalette.width"
+        :height="svgPalette.height"
+        @click="svgPalette.color = randomColor()"/>
+        <span class="my-sub-title" :style="{ 'color': svgPalette.color }">{{ svgPalette.color }}</span>
       </div>
       <highlight language="html" class="highlight">
       {{ templateCode.click.html }}
@@ -76,7 +81,7 @@ export default {
   data () {
     return {
       svgPalette: {
-        fill: this.randomColor(),
+        color: this.randomColor(),
         width: '150px',
         height: '150px'
       },
@@ -97,12 +102,14 @@ export default {
           html: `<svg-filler path="/static/icon/bitcoin.svg" fill="#FF9900" width="50px" height="50px"/>`
         },
         click: {
-          html: `<svg-filler path="/static/icon/palette.svg" :fill="svgPalette.fill" :width="svgPalette.width" :height="svgPalette.height"  @click="svgPalette.fill = randomColor()" stroke="red" hover-stroke-color="green"/>`,
+          html: `<svg-filler path="/static/vue-svg-filler/icon/palette.svg" class="cs-pointer" :fill="svgPalette.color" :width="svgPalette.width" :height="svgPalette.height" @click="svgPalette.color = randomColor()"/>
+
+    <svg-filler path="/static/vue-svg-filler/icon/palette.svg" class="cs-pointer" :stroke="svgPalette.color" fill="none" :width="svgPalette.width" :height="svgPalette.height" @click="svgPalette.color = randomColor()"/>`,
           script: `export default {
       data () {
         return {
           svgPalette: {
-            fill: this.randomColor(),
+            color: this.randomColor(),
             width: '150px',
             height: '150px'
           }
@@ -150,7 +157,11 @@ export default {
   },
   methods: {
     randomColor () {
-      return `#${(Math.random() * 0xFFFFFF << 0).toString(16)}`
+      let length = 6
+      let chars = '0123456789ABCDEF'
+      let hex = '#'
+      while (length--) hex += chars[(Math.random() * 16) | 0]
+      return hex
     }
   },
   components: {
