@@ -138,7 +138,7 @@ export default {
         { props: 'height', type: 'String', default: '24px', description: 'Height.' },
         { props: 'fill', type: 'String', default: '#000', description: 'Fill color.' },
         { props: 'hover-color', type: 'String', default: '-', description: 'Fill color when hover icon.' },
-        { props: 'stroke', type: 'String', default: '#000', description: 'Stroke color.' },
+        { props: 'stroke', type: 'String', default: 'none', description: 'Stroke color.' },
         { props: 'hover-stroke-color', type: 'String', default: '-', description: 'Stroke color when hover icon.' }
       ],
       propsColumns: [
