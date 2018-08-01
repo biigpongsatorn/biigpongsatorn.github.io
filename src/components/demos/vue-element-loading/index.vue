@@ -31,6 +31,61 @@
       {{ templateCode.inside.html }}
       </highlight>
     </div>
+    <div class="my-sub-title pd-hrzt-30px"># Spinner</div>
+    <div class="f-left w-100pct pd-hrzt-30px mg-vtc-10px">
+      <div class="columns is-mobile">
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="spinner" color="#FF6700"/>
+          </div>
+          <span>spinner</span>
+        </div>
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="mini-spinner" color="#FF6700"/>
+          </div>
+          <span>mini-spinner</span>
+        </div>
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="ring" color="#FF6700"/>
+          </div>
+          <span>ring</span>
+        </div>
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="line-wave" color="#FF6700"/>
+          </div>
+          <span>line-wave</span>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="line-scale" color="#FF6700"/>
+          </div>
+          <span>line-scale</span>
+        </div>
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="line-down" color="#FF6700"/>
+          </div>
+          <span>line-down</span>
+        </div>
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="bar-fade" color="#FF6700"/>
+          </div>
+          <span>bar-fade</span>
+        </div>
+        <div class="column w-50px">
+          <div class="spinner-box">
+            <vue-element-loading :active="true" spinner="bar-fade-scale" color="#FF6700"/>
+          </div>
+          <span>bar-fade-scale</span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -71,3 +126,13 @@ export default {
   components: { VueElementLoading }
 }
 </script>
+
+<style scoped>
+.spinner-box {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  text-align: center;
+}
+</style>
