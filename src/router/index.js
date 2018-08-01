@@ -5,6 +5,7 @@ import VueSlideBar from '../pages/vue-slide-bar.vue'
 import VueSvgFiller from '../pages/vue-svg-filler.vue'
 import VueThailandAddressAutocomplete from '../pages/vue-thailand-address-autocomplete.vue'
 import VueInfiniteSlideBar from '../pages/vue-infinite-slide-bar.vue'
+import VueElementLoading from '../pages/vue-element-loading.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/vue-infinite-slide-bar',
       name: 'VueInfiniteSlideBar',
       component: VueInfiniteSlideBar
+    },
+    {
+      path: '/vue-element-loading',
+      name: 'VueElementLoading',
+      component: VueElementLoading
     }
   ]
 })

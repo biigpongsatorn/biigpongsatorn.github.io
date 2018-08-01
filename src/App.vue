@@ -7,20 +7,23 @@
           <svg-filler path="/static/app/arrow-down.svg" fill="#fff" class="mg-r-10px"/>
         </div>
         <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueSlideBar' })">
-          <span>🎢 </span>Slide Bar
+          <span>🎢 </span>Vue Slide Bar
         </b-dropdown-item>
         <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueSvgFiller' })">
-          <span>🖍 </span>SVG Filler
+          <span>🖍 </span>Vue SVG Filler
         </b-dropdown-item>
         <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueThailandAddressAutocomplete' })">
-          <span>🇹🇭 </span>Thailand Address
+          <span>🇹🇭 </span>Vue Thailand Address
         </b-dropdown-item>
         <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueInfiniteSlideBar' })">
-          <span>∞ </span>Infinite Slide Bar
+          <span>∞ </span>Vue Infinite Slide Bar
         </b-dropdown-item>
-        <!-- <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'AboutMe' })">
+        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'VueElementLoading' })">
+          <span>⏳ </span>Vue Element Loading
+        </b-dropdown-item>
+        <b-dropdown-item class="pd-vtc-15px" @click="$router.push({ name: 'AboutMe' })">
           <span>😎 </span>About Me
-        </b-dropdown-item> -->
+        </b-dropdown-item>
       </b-dropdown>
     </div>
     <div class="router-view">
@@ -63,6 +66,8 @@ export default {
         return 'Thailand Address'
       } else if (this.currentRoute === 'VueInfiniteSlideBar') {
         return 'Vue Infinite Slide Bar'
+      } else if (this.currentRoute === 'VueElementLoading') {
+        return 'Vue Element Loading'
       } else if (this.currentRoute === 'AboutMe') {
         return 'About Me'
       }
