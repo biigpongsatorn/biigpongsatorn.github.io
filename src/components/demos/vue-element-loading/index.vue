@@ -31,6 +31,28 @@
       {{ templateCode.inside.html }}
       </highlight>
     </div>
+    <div class="my-sub-title pd-hrzt-30px"># Customize loader</div>
+    <div class="f-left w-100pct pd-hrzt-30px mg-vtc-10px">
+      <div>
+        <a class="button" @click="startLoading('customize loader')">
+          Start
+        </a>
+      </div>
+      <div class="f-left pd-30px mg-vtc-10px bd-rd-5px bg-cl-light mx-w-300px">
+        <vue-element-loading :active="showCustomizeLoader">
+          <img src="https://i.pinimg.com/originals/9f/b1/25/9fb125f1fedc8cc62ab5b20699ebd87d.gif" width="55px" height="55px">
+        </vue-element-loading>
+        <span>
+          Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam.
+          Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam.
+        </span>
+      </div>
+    </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      <highlight language="html" class="highlight">
+      {{ templateCode.customizeLoader.html }}
+      </highlight>
+    </div>
     <div class="my-sub-title pd-hrzt-30px"># Spinner</div>
     <div class="f-left w-100pct pd-hrzt-30px mg-vtc-10px">
       <div class="columns is-mobile">
@@ -106,10 +128,22 @@ export default {
         Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit.
       </span>
     </div>`
+        },
+        customizeLoader: {
+          html: `<div class="my-container">
+      <vue-element-loading :active="showCustomizeLoader">
+        <img src="pikachu.gif" width="55px" height="55px">
+      </vue-element-loading>
+      <span>
+        Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam.
+        Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam.
+      </span>
+    </div>`
         }
       },
       showFullScreen: false,
-      showInside: false
+      showInside: false,
+      showCustomizeLoader: false
     }
   },
   methods: {
@@ -117,9 +151,12 @@ export default {
       if (type === 'full') {
         this.showFullScreen = true
         setTimeout(() => { this.showFullScreen = false }, 3000)
-      } else {
+      } else if (type === 'inside') {
         this.showInside = true
         setTimeout(() => { this.showInside = false }, 3000)
+      } else {
+        this.showCustomizeLoader = true
+        setTimeout(() => { this.showCustomizeLoader = false }, 3000)
       }
     }
   },
