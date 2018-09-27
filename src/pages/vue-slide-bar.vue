@@ -130,7 +130,8 @@ export default {
         { props: 'show-tooltip', type: 'Boolean', default: 'true', description: 'Flag display tooltip' },
         { props: 'icon-width', type: 'Number', default: '20', description: 'Icon width' },
         { props: 'line-height', type: 'Number', default: '5', description: 'Line height' },
-        { props: 'speed', type: 'Number', default: '0.5', description: 'Transition speed' }
+        { props: 'speed', type: 'Number', default: '0.5', description: 'Transition speed' },
+        { props: 'paddingless', type: 'Boolean', default: 'false', description: 'Remove padding and min-height' }
       ],
       propsColumns: [
         { field: 'props', label: 'Props', centered: true },
@@ -147,7 +148,6 @@ export default {
       eventsColumns: [
         { field: 'events', label: 'Events', centered: true },
         { field: 'type', label: 'Type', centered: true },
-        { field: 'default', label: 'Default', centered: true },
         { field: 'description', label: 'Description', centered: true }
       ],
       slotsData: [
