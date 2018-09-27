@@ -139,7 +139,10 @@ export default {
         { field: 'description', label: 'Description', centered: true }
       ],
       eventsData: [
-        { events: 'callback-range', type: 'Function', default: '(range) => {}', description: 'Tricker when values change return range data' }
+        { events: 'input', type: 'Function', description: 'Tricker when values change' },
+        { events: 'callbackRange', type: 'Function', description: 'Tricker when range values change' },
+        { events: 'dragStart', type: 'Function', description: 'Tricker when start drag' },
+        { events: 'dragEnd', type: 'Function', description: 'Tricker when stop drag' }
       ],
       eventsColumns: [
         { field: 'events', label: 'Events', centered: true },
