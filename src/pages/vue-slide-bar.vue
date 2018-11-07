@@ -127,6 +127,7 @@ export default {
         { props: 'label-style', type: 'Object', default: 'null', description: 'Label style' },
         { props: 'data', type: 'Array', default: 'null', description: 'Custom data' },
         { props: 'is-disabled', type: 'Boolean', default: 'false', description: 'Flag for disable slider bar' },
+        { props: 'draggable', type: 'Boolean', default: 'true', description: 'Flag for active/disable draggable' },
         { props: 'show-tooltip', type: 'Boolean', default: 'true', description: 'Flag display tooltip' },
         { props: 'icon-width', type: 'Number', default: '20', description: 'Icon width' },
         { props: 'line-height', type: 'Number', default: '5', description: 'Line height' },
