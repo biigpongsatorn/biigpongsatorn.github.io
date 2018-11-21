@@ -79,7 +79,7 @@
       </div>
       <div class="markdown">
         1. Your <b>svg</b> file must only contain in <b>/static</b> directory <br>
-        2. <b>path</b> must be full path e.g. <b>static/icon.svg</b> or <b>/static/icon/file.svg</b> , Can't use <b>../</b> or <b>./</b> <br><br>
+        2. The <b>path</b> must be a relative path e.g. <b>static/icon.svg</b> or <b>/static/icon/file.svg</b> , Can't use <b>../</b> or <b>./</b> <br><br>
       <highlight language="html" class="highlight">
       {{ examplePath }}
       </highlight>
