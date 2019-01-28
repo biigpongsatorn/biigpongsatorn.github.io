@@ -83,6 +83,9 @@
       <b-table :data="propsData" :columns="propsColumns" striped></b-table>
       <hr>
     </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      Please see more example <a href="https://vue-element-loading.netlify.com/">this site</a>.
+    </div>
     <Support link="https://github.com/biigpongsatorn/vue-element-loading"/>
     <Contributing/>
     <License/>
@@ -104,7 +107,12 @@ export default {
         { props: 'active', type: 'Boolean', default: '-', description: 'Status for show/hide loading' },
         { props: 'spinner', type: 'String', default: 'spinner', description: 'Spinner icon name: spinner, mini-spinner, ring, line-wave, line-scale, line-down, bar-fade, bar-fade-scale' },
         { props: 'color', type: 'String', default: '#ccc', description: 'Color of spinner icon' },
-        { props: 'is-full-screen', type: 'Boolean', default: 'false', description: 'Loader will overlay the full page' }
+        { props: 'is-full-screen', type: 'Boolean', default: 'false', description: 'Loader will overlay the full page' },
+        { props: 'background-color', type: 'String', default: 'rgba(255, 255, 255, .9)',description: 'Background color of spinner icon (for overlay)' },
+        { props: 'size', type: 'String', default: '40',description: 'The size to display the spinner in pixels (NOTE: this will not affect custom spinner images)' },
+        { props: 'duration', type: 'String', default: '0.6', description: `The duration of one 'loop' of the spinner animation, in seconds (NOTE: this will not affect custom spinner images)` },
+        { props: 'text', type: 'String', default: '-', description: 'Text will appear below loader' },
+        { props: 'text-style', type: 'Object', default: '{}', description: 'Change style of the text below loader' },
       ],
       propsColumns: [
         { field: 'props', label: 'Props', centered: true },
