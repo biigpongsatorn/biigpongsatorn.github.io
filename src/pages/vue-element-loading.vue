@@ -76,15 +76,15 @@
       <VueElementLoadingDemo/>
       <hr>
     </div>
+    <div class="f-left w-100pct pd-hrzt-30px">
+      Please see more example <a href="https://vue-element-loading.netlify.com/">this site</a>.
+    </div>
     <div class="my-title pd-hrzt-30px">
       Options
     </div>
     <div class="f-left w-100pct pd-hrzt-30px">
       <b-table :data="propsData" :columns="propsColumns" striped></b-table>
       <hr>
-    </div>
-    <div class="f-left w-100pct pd-hrzt-30px">
-      Please see more example <a href="https://vue-element-loading.netlify.com/">this site</a>.
     </div>
     <Support link="https://github.com/biigpongsatorn/vue-element-loading"/>
     <Contributing/>
