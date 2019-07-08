@@ -3,6 +3,15 @@
     <div class="my-sub-title"># Simple usage</div>
     <div class="f-left w-100pct pd-30px">
       <vue-slide-bar v-model="simpleValue"/>
+      <b>{{simpleValue}}%</b>
+      <div>
+        <button class="button" @click="simpleValue--">
+          -
+        </button>
+        <button class="button" @click="simpleValue++">
+          +
+        </button>
+      </div>
       <div class="columns mg-t-15px">
         <div class="column">
           <b>template</b>
@@ -152,7 +161,17 @@ export default {
       loadingValue: 0,
       templateCode: {
         simple: {
-          html: `<vue-slide-bar v-model="simpleValue"/>`,
+          html: `<vue-slide-bar v-model="simpleValue"/>
+        <b>{{simpleValue}}%</b>
+        <div>
+          <button class="button" @click="simpleValue--">
+            -
+          </button>
+          <button class="button" @click="simpleValue++">
+            +
+          </button>
+        </div>
+          `,
           script: `export default {
             data () {
               return {
@@ -235,12 +254,12 @@ export default {
                 sliderCustomzie: {
                   val: 9,
                   lineHeight: 10,
-                  processStyle: { 
-                    backgroundColor: '#42b883' 
+                  processStyle: {
+                    backgroundColor: '#42b883'
                   },
-                  tooltipStyles: { 
+                  tooltipStyles: {
                     backgroundColor: '#42b883',
-                    borderColor: '#42b883' 
+                    borderColor: '#42b883'
                   }
                 }
               }
