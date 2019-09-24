@@ -20,8 +20,8 @@
     </div>
     <div class="my-sub-title pd-30px"># Cryptocurrencies</div>
     <infinite-slide-bar>
-      <div class="columns">
-        <div class="column" v-for="coin in coins" :key="coin.key">
+      <div class="items">
+        <div v-for="coin in coins" :key="coin.key">
           <div class="f-left pd-t-8px mg-r-10px">
             <img :src="`/static/vue-infinite-slide-bar/crypto/${coin.key}.png`">
           </div>
@@ -60,8 +60,8 @@ export default {
         },
         crypto: {
           html: `<infinite-slide-bar>
-      <div class="columns">
-        <div class="column" v-for="coin in coins" :key="coin.key">
+      <div class="items">
+        <div v-for="coin in coins" :key="coin.key">
           <div class="f-left pd-t-8px mg-r-10px">
             <img :src="'/static/vue-infinite-slide-bar/crypto/' + coin.key + '.png'">
           </div>
@@ -74,7 +74,9 @@ export default {
           </div>
         </div>
       </div>
-    </infinite-slide-bar>`
+    </infinite-slide-bar>
+
+    <style> .items { display: flex; justify-content: space-around; } </style>`
         }
       },
       coins: [
@@ -114,3 +116,10 @@ export default {
   components: { InfiniteSlideBar }
 }
 </script>
+
+<style lang="css" scoped>
+.items {
+  display: flex;
+  justify-content: space-around;
+}
+</style>
