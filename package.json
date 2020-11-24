@@ -14,7 +14,7 @@
     "begeta": "^0.1.19",
     "buefy": "^0.6.5",
     "bulma": "^0.7.1",
-    "highlight.js": "^9.12.0",
+    "highlight.js": "^10.1.2",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.0.1",
     "vue": "^2.5.2",
