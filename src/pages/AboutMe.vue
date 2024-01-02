@@ -52,8 +52,8 @@
 
 <script>
 export default {
-  name: "AboutMe",
-};
+  name: 'AboutMe'
+}
 </script>
 
 <style scoped>
