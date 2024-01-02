@@ -18,6 +18,10 @@
       <p>
         🛠️ As a dedicated full-stack developer 👨🏻‍💻, I'm fully immersed in the realm of AI, particularly focused on Speech & Language technologies. At Gowajee.ai, we're crafting solutions that redefine communication, leveraging the power of machine learning and cutting-edge algorithms to elevate enterprise capabilities.
       </p>
+      <br>
+      <p>
+        Join me on this thrilling journey as we harness the potential of Speech & Language AI tech to revolutionize the way enterprises interact and thrive in the digital landscape!
+      </p>
     </div>
     <br>
     <hr>
