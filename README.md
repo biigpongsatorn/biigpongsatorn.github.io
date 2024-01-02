@@ -6,11 +6,11 @@
 
 **Who Am I 🤔 ?**
 
-🚀 Hey there, I'm Pongsatorn Nitithammwoot, also known as Big. I'm proud to be at the helm of innovation at Gowajee.ai, where we're shaping the future with enterprise-grade Speech & Language AI technologies! 🗣️🤖✨
+🚀 Hi, I'm Pongsatorn Nitithammwoot, known as Big, and I'm currently the CTO at Gowajee.ai, where we're focused on enterprise-grade Speech & Language AI technologies. 🗣️🤖✨
 
-🛠️ As a dedicated full-stack developer 👨🏻‍💻, I'm fully immersed in the realm of AI, particularly focused on Speech & Language technologies. At Gowajee.ai, we're crafting solutions that redefine communication, leveraging the power of machine learning and cutting-edge algorithms to elevate enterprise capabilities.
+🛠️ As a seasoned full-stack developer 👨🏻‍💻, my role involves leading our tech initiatives at Gowajee.ai. I'm passionate about exploring the potential of AI in enhancing communication for enterprises.
 
-Join me on this thrilling journey as we harness the potential of Speech & Language AI tech to revolutionize the way enterprises interact and thrive in the digital landscape!
+Join me in exploring the world of Speech & Language AI tech as we work towards innovative solutions at Gowajee.ai!
 
 ## Contact me 📞
 
