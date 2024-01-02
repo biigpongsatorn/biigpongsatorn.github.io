@@ -38,7 +38,7 @@
           <a href="https://www.linkedin.com/in/pongsatorn-nitithammawoot-50b719152/">- Linkin</a>
         </li>
         <li>
-          <a href="https://twitter.com/BiiG_Pongsatorn">- Twitter</a>
+          <a href="https://twitter.com/0xbiig">- Twitter</a>
         </li>
       </ul>
     </div>
