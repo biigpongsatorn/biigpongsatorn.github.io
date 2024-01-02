@@ -11,23 +11,15 @@
     <br>
     <div>
       <p>
-        My name is
-        <b>Pongsatorn Nitithammwoot</b> or call me
-        <b>Big</b>. Now I’m living in <b>Bangkok, Thailand</b>.
-        I’m who loved in <b>Vue.js</b> and <b>Blockchain</b> ❤️
+        🚀 Hey there, I'm <b>Pongsatorn Nitithammwoot</b>, also known as <b>Big</b>. I'm proud to be at the helm of innovation at <a href="https://gowajee.ai">Gowajee.ai</a>,
+        where we're shaping the future with enterprise-grade Speech & Language AI technologies! 🗣️🤖✨
       </p>
       <br>
       <p>
-        Currently I’m working <b>Full stack developer</b> 👨🏻‍💻 ,
-        I want to make lots of <b>Vue components</b>,
-        <b>Javascript libraries</b>, <b>Node.js libraries</b>
-        or another <b>opensources</b> for <b>improve myself</b>.
+        🛠️ As a dedicated full-stack developer 👨🏻‍💻, I'm fully immersed in the realm of AI, particularly focused on Speech & Language technologies. At Gowajee.ai, we're crafting solutions that redefine communication, leveraging the power of machine learning and cutting-edge algorithms to elevate enterprise capabilities.
       </p>
     </div>
     <br>
-    <div class="markdown">
-      “I am a slow walker, but I never walk backwards.”
-    </div>
     <hr>
     <div>
       <b># Contact me 📞</b>
@@ -43,9 +35,6 @@
         </li>
         <li>
           <a href="https://twitter.com/BiiG_Pongsatorn">- Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/biig.nttmw">- Facebook</a>
         </li>
       </ul>
     </div>
